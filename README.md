@@ -377,6 +377,10 @@ sta run.tcl | tee run.log
 ```
 <img width="960" alt="d2 - 3" src="https://user-images.githubusercontent.com/64173714/220684435-31a45d63-7768-44b9-9730-65d6749ea92e.png">
 
+understanding timing report
+
+<img width="907" alt="d2 timing" src="https://user-images.githubusercontent.com/64173714/220773552-c30661f1-ddae-4e06-9fe9-544887393f07.png">
+
 
 <a name="day-3"></a>
 # DAY - 3
