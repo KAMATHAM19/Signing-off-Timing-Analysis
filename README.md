@@ -271,10 +271,68 @@ The pins of the cell NAND2_X1 in simple_max.lib
 <img width="635" alt="final nad" src="https://user-images.githubusercontent.com/64173714/220676727-229895fe-355b-43a1-ad67-20ed19dc0e1e.png">
 
 The difference between NAND2_X1 and NAND3_X1
+
+<img width="635" alt="final nad" src="https://user-images.githubusercontent.com/64173714/220679191-bebcdb61-c727-45e1-b591-eddc46e04faf.png"> 
+<img width="629" alt="final nad3" src="https://user-images.githubusercontent.com/64173714/220679288-7aed8e8d-09cf-43fa-8f31-613b3f6e446e.png"> 
+
 ```
+SPEF
+
+A SPEF (Standard Parasitic Exchange Format) file describes the design's parasitic information.
+• Users would never manually create this file.
+• It is generated automatically by the tool.
+• It is primarily used to transfer parasitic data from one tool to another.
+
+<img width="960" alt="spef" src="https://user-images.githubusercontent.com/64173714/220685189-9ca39ed9-e30e-43cd-bdc5-c8d41a74be63.png">
+
+add  report_timing –num_paths 5 in tcl file
+<img width="922" alt="d2 1" src="https://user-images.githubusercontent.com/64173714/220682933-129b1899-9c57-4869-9e08-7013f1e9b823.png">
+
+run sta 
+```
+sta run.tcl | tee run.log
+```
+<img width="960" alt="d2 - 3" src="https://user-images.githubusercontent.com/64173714/220684435-31a45d63-7768-44b9-9730-65d6749ea92e.png">
+
+
+<a name="lab-3"></a>
+# Lab - 3
+
+```
+cd lab3
+ls
+sta run.tcl | tee out.txt
+```
+<img width="923" alt="d3 2" src="https://user-images.githubusercontent.com/64173714/220686704-8ed65d6a-f82b-4f25-bbe4-663affc82235.png">
+
+
+<img width="539" alt="d3 3" src="https://user-images.githubusercontent.com/64173714/220686834-4cb29e4b-7d2f-49c3-b4b3-f6759fe23280.png">
+
+report_checks –from F1/CK -endpoint_count 100
+
+
+lab 4
+
+<img width="960" alt="d4 1" src="https://user-images.githubusercontent.com/64173714/220689445-a0e80c70-afa5-4500-a239-d09e55db6f1e.png">
+
+<img width="960" alt="d4 2" src="https://user-images.githubusercontent.com/64173714/220689509-47b2f21e-5a4d-43f4-9378-7be582146af2.png">
+<img width="960" alt="d4 3" src="https://user-images.githubusercontent.com/64173714/220689554-7fc79a10-0ce0-4d96-b90b-93332d13a24f.png">
+
+<img width="960" alt="d4 4" src="https://user-images.githubusercontent.com/64173714/220689598-7935b3f5-8132-430a-82c1-c778c77566a4.png">
+
+
+<img width="960" alt="d4 5" src="https://user-images.githubusercontent.com/64173714/220689632-049c06d6-68c1-40ac-aeae-268061eaaafb.png">
+
+<img width="960" alt="d4 6" src="https://user-images.githubusercontent.com/64173714/220689652-1a3532c0-94ea-4a73-a95d-6fcdea9b7b9a.png">
+<img width="960" alt="d4 asyn 1" src="https://user-images.githubusercontent.com/64173714/220689694-9bbc883e-07d5-4a30-80ed-f20517bf7231.png">
+
+<img width="958" alt="d4 aync 2" src="https://user-images.githubusercontent.com/64173714/220689768-8d178919-0cfb-467a-9a8e-f18fb7b2c569.png">
+
+
 read_verilog simple.v
 set_input_delay 0 -min -rise [get_ports inp1] -clock tau2015_clk
 
 ## Refernces
 1. 
 2. https://people.eecs.berkeley.edu/~alanmi/publications/other/liberty07_03.pdf
+3. https://www.vlsisystemdesign.com/spef-format-part-1/
