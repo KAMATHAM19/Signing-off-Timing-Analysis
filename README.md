@@ -35,7 +35,7 @@ STA is a technique for improving a design's timing performance.
 ## Timing paths
 To perform design analysis, STA divides the logic design into `ports` and `sequential elements`.
 
-     pic 1
+![1](https://user-images.githubusercontent.com/64173714/220641759-6bd2f9aa-296b-49c3-aff5-0727fba6b333.jpg)
 
 <a name="components-of-timing-paths"></a>
 ## Components of Timing paths
@@ -50,13 +50,13 @@ To perform design analysis, STA divides the logic design into `ports` and `seque
 * Combinational Logic 
      * Elements that have no memory element or internal state
      
-  
-  pic 2
+  ![2](https://user-images.githubusercontent.com/64173714/220641929-590b5bda-b96c-4b8c-9cd1-fad1c14b532f.jpg)
+
      
 <a name="setup-check-&-hold-check"></a>
 ## Setup Check & Hold Check
-
-                  pic 3
+               
+![3](https://user-images.githubusercontent.com/64173714/220641999-f7bbfebf-0e52-4ff3-80a2-814068537f40.jpg)
 
 SETUP
 * The data should be stable at the input of sequential device for sometime before the clock edge that captures the data.
@@ -68,7 +68,8 @@ HOLD
  
 ** For setup and hold checks of a flop is dependent on the technology node and value is available in logic libraries.
 
-                                 pic 4
+                                 
+![4](https://user-images.githubusercontent.com/64173714/220642088-3939b35c-ef4e-4439-b319-3c541cd9c54c.jpg)
 
 To understand the setup and hold checks, DATA (d) is denoted as D1, D2, D3, D4 in the waveform above.
 
@@ -84,10 +85,10 @@ D4 - Data arrives close to clock edge violates the hold time constraint
 <a name="slack-calculation"></a>
 ## Slack Calculation
 
-                pic 5
+ ![5](https://user-images.githubusercontent.com/64173714/220644424-66778446-7e38-4c90-bbeb-ec21eda3cc62.JPG)
+
 
 Arrival Time - Time it takes the signal to travel from startpoint to endpoint.
-             - one endpoint can have multiple arrival times.
 
 Required Time - The signal should arrive before the specified time.
 
