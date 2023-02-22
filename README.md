@@ -40,10 +40,13 @@ Sign-off timing analysis is a vital step in the electronic design automation pro
        * [Clock gating checks](#clock-gating-checks)
        * [Async pin checks](#async-pin-checks)
   * [DAY - 5](#day-5)
+    * [Clock groups](#clock-groups)
+    * [Clock properties](#clock-properties)
+    * [Timing Exceptions](#timing-exceptions)
     * [Lab - 5](#lab-5)
-       * [Liberity File](#liberity-file)
-       * [Lab](#lab)
-       * [SPEF](#spef)
+       * [CPPR](#cppr)
+       * [ECO](#eco)
+       
        
 
 <a name="day-1"></a>
@@ -454,11 +457,29 @@ report_checks –from F1/CK -endpoint_count 100
 <a name="day-5"></a>
 # DAY - 5
 
+<a name="clock-groups"></a>
+## Clock groups
 
-read_verilog simple.v
-set_input_delay 0 -min -rise [get_ports inp1] -clock tau2015_clk
+<a name="clock-properties"></a>
+## Clock properties
 
+<a name="timing-exceptions"></a>
+## Timing Exceptions
+
+<a name="lab-5"></a>
+## Lab - 5
+
+<a name="cppr"></a>
+## CPPR
+ 
+<a name="eco"></a>
+## ECO
+
+<a name="refernces"></a>
 ## Refernces
 1. 
 2. https://people.eecs.berkeley.edu/~alanmi/publications/other/liberty07_03.pdf
 3. https://www.vlsisystemdesign.com/spef-format-part-1/
+
+<a name="day-5"></a>
+
