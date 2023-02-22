@@ -432,24 +432,24 @@ report_checks –from F1/CK -endpoint_count 100
 
 <a name="clock-gating-checks"></a>
 ## Clock gating checks
+```
+  cd lab6
+  leafpad run.tcl
+  sta run.tcl | tee run.log
+```
+<img width="960" alt="d4 1" src="https://user-images.githubusercontent.com/64173714/220689445-a0e80c70-afa5-4500-a239-d09e55db6f1e.png">
+<img width="960" alt="d4 2" src="https://user-images.githubusercontent.com/64173714/220689509-47b2f21e-5a4d-43f4-9378-7be582146af2.png">
+<img width="960" alt="d4 3" src="https://user-images.githubusercontent.com/64173714/220689554-7fc79a10-0ce0-4d96-b90b-93332d13a24f.png">
+<img width="960" alt="d4 4" src="https://user-images.githubusercontent.com/64173714/220689598-7935b3f5-8132-430a-82c1-c778c77566a4.png">
 
 <a name="async-pin-checks"></a>
 ## Async pin checks
-
-<img width="960" alt="d4 1" src="https://user-images.githubusercontent.com/64173714/220689445-a0e80c70-afa5-4500-a239-d09e55db6f1e.png">
-
-<img width="960" alt="d4 2" src="https://user-images.githubusercontent.com/64173714/220689509-47b2f21e-5a4d-43f4-9378-7be582146af2.png">
-<img width="960" alt="d4 3" src="https://user-images.githubusercontent.com/64173714/220689554-7fc79a10-0ce0-4d96-b90b-93332d13a24f.png">
-
-<img width="960" alt="d4 4" src="https://user-images.githubusercontent.com/64173714/220689598-7935b3f5-8132-430a-82c1-c778c77566a4.png">
-
-
-<img width="960" alt="d4 5" src="https://user-images.githubusercontent.com/64173714/220689632-049c06d6-68c1-40ac-aeae-268061eaaafb.png">
-
+```
+  cd lab7
+  leafpad run.tcl
+  sta run.tcl | tee run.log
+```
 <img width="960" alt="d4 6" src="https://user-images.githubusercontent.com/64173714/220689652-1a3532c0-94ea-4a73-a95d-6fcdea9b7b9a.png">
-<img width="960" alt="d4 asyn 1" src="https://user-images.githubusercontent.com/64173714/220689694-9bbc883e-07d5-4a30-80ed-f20517bf7231.png">
-
-<img width="958" alt="d4 aync 2" src="https://user-images.githubusercontent.com/64173714/220689768-8d178919-0cfb-467a-9a8e-f18fb7b2c569.png">
 
 <a name="day-5"></a>
 # DAY - 5
