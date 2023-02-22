@@ -15,6 +15,8 @@ Sign-off timing analysis is a vital step in the electronic design automation pro
    * [Port delays](#port-delays)
    * [Boundary Constraints](#boundary-constraints)    
    * [Lab - 1](#lab-1)
+      * [OpenSTA](#opensta)
+      * [lab](#lab)
 
 <a name="day-1"></a>
 # DAY - 1 
@@ -197,34 +199,41 @@ set_input_transition - specifiestransition value
 <a name="lab-1"></a>
 # Lab - 1
 
-<a name="day-1"></a>
+<a name="OpenSTA"></a>
 ##  OpenSTA
 * OpenSTA is a gate level static timing verifier. It can be used as a standalone executable to verify the timing of a design using standard file formats.
-     • Verilog netlist
-  • Liberty library
-  • SDC timing constraints
-  • SDF delay annotation 
-  • SPEF parasitics 
+    * Verilog netlist
+    * Liberty library
+    * SDC timing constraints
+    * SDF delay annotation 
+    * SPEF parasitics 
 * OpenSTA is designed to be easily bolted on to other tools as a timing engine. Using a network adapter, OpenSTA can access the host netlist data structures without duplicating them.
 * Query-based incremental update of delays, arrival, and required times
 * Simulator for propagating constants from constraints and netlist tie high/low
 
-Lab1
+<a name="lab"></a>
+## Lab
 
 ```
 git clone https://github.com/vikkisachdeva/openSTA_sta_workshop
 cd openSTA_sta_workshop/vlsideepdive_openSTA_labs/lab1
 ls
 leafpad simple.v
+```
+
 
 <img width="960" alt="verilog" src="https://user-images.githubusercontent.com/64173714/219878971-f637e0f4-ffe4-400c-8826-6eb4010a4336.png">
 
-
+```
 leafpad sky130_fd_sc_hd__tt_025C_1v80.lib
-leafpad 
-leafpad
+leafpad  simple.sdc
+leafpad run.tcl
 sta run.tcl -exit | tee run.log
+```
+<img width="959" alt="d1 -1" src="https://user-images.githubusercontent.com/64173714/220656077-eae71440-bf07-4d97-83b0-51e1f7c9b7da.png">
 
+<img width="960" alt="d1 -2" src="https://user-images.githubusercontent.com/64173714/220656378-779c79f6-5b93-4041-9b42-611ff2ae26ef.png">
+<img width="960" alt="d1 -3" src="https://user-images.githubusercontent.com/64173714/220656751-6c88455f-6563-418c-a2d8-675c8ba7c67d.png">
 
 
 read_verilog simple.v
