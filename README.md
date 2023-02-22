@@ -17,6 +17,12 @@ Sign-off timing analysis is a vital step in the electronic design automation pro
    * [Lab - 1](#lab-1)
       * [OpenSTA](#opensta)
       * [lab](#lab)
+* [DAY - 2](#day-2)
+    * [Lab - 2](#lab-2)
+       * [Liberity File](#liberity-file)
+       * [Lab](#lab)
+       * [SPEF](#spef)
+       
 
 <a name="day-1"></a>
 # DAY - 1 
@@ -236,9 +242,14 @@ sta run.tcl -exit | tee run.log
 <img width="960" alt="d1 -2" src="https://user-images.githubusercontent.com/64173714/220656378-779c79f6-5b93-4041-9b42-611ff2ae26ef.png">
 <img width="960" alt="d1 -3" src="https://user-images.githubusercontent.com/64173714/220656751-6c88455f-6563-418c-a2d8-675c8ba7c67d.png">
 
+<a name="day-2"></a>
+# DAY - 2 
+
+
 <a name="lab-2"></a>
 # Lab - 2
 
+<a name="liberity-file"></a>
 Liberity File
 The.lib file is an ASCII representation of the timing and power parameters associated with any cell in a specific semiconductor technology.
 * The .lib file contains timing models and data to calculate
@@ -254,7 +265,6 @@ leafpad simple_max.lib
 ```
 <img width="960" alt="d2 -1" src="https://user-images.githubusercontent.com/64173714/220660262-d75b2352-7286-4b72-a58a-7f0e881769ee.png">
 
-```
 To find all of the cells in simple max.lib
 ```
 # total no of cells
@@ -262,8 +272,6 @@ grep -c " End cell" simple_max.lib
 # cells
 grep -c " End cell" simple_max.lib
 ```
-```
-
 <img width="960" alt="d2 - 2" src="https://user-images.githubusercontent.com/64173714/220673290-1e7c644a-a351-453f-8197-125f67c0d0b9.png">
 
 The pins of the cell NAND2_X1 in simple_max.lib
@@ -275,8 +283,8 @@ The difference between NAND2_X1 and NAND3_X1
 <img width="635" alt="final nad" src="https://user-images.githubusercontent.com/64173714/220679191-bebcdb61-c727-45e1-b591-eddc46e04faf.png"> 
 <img width="629" alt="final nad3" src="https://user-images.githubusercontent.com/64173714/220679288-7aed8e8d-09cf-43fa-8f31-613b3f6e446e.png"> 
 
-```
-SPEF
+<a name="spef"></a>
+# SPEF
 
 A SPEF (Standard Parasitic Exchange Format) file describes the design's parasitic information.
 • Users would never manually create this file.
@@ -295,6 +303,9 @@ sta run.tcl | tee run.log
 <img width="960" alt="d2 - 3" src="https://user-images.githubusercontent.com/64173714/220684435-31a45d63-7768-44b9-9730-65d6749ea92e.png">
 
 
+<a name="day-3"></a>
+# DAY - 3
+
 <a name="lab-3"></a>
 # Lab - 3
 
@@ -310,6 +321,8 @@ sta run.tcl | tee out.txt
 
 report_checks –from F1/CK -endpoint_count 100
 
+<a name="day-4"></a>
+# DAY - 4
 
 lab 4
 
@@ -327,6 +340,9 @@ lab 4
 <img width="960" alt="d4 asyn 1" src="https://user-images.githubusercontent.com/64173714/220689694-9bbc883e-07d5-4a30-80ed-f20517bf7231.png">
 
 <img width="958" alt="d4 aync 2" src="https://user-images.githubusercontent.com/64173714/220689768-8d178919-0cfb-467a-9a8e-f18fb7b2c569.png">
+
+<a name="day-5"></a>
+# DAY - 5
 
 
 read_verilog simple.v
