@@ -477,9 +477,11 @@ report_checks –from F1/CK -endpoint_count 100
 
 <a name="refernces"></a>
 ## Refernces
-1. 
+1. https://github.com/The-OpenROAD-Project/OpenSTA/blob/master/doc/OpenSTA.pdf
 2. https://people.eecs.berkeley.edu/~alanmi/publications/other/liberty07_03.pdf
 3. https://www.vlsisystemdesign.com/spef-format-part-1/
+4. https://www.vlsisystemdesign.com/?s=cppr
+5. https://www.vlsisystemdesign.com/the-beauty-of-slack-based-timing-eco/
 
 <a name="day-5"></a>
 
