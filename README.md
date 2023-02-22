@@ -220,23 +220,47 @@ cd openSTA_sta_workshop/vlsideepdive_openSTA_labs/lab1
 ls
 leafpad simple.v
 ```
-
-
 <img width="960" alt="verilog" src="https://user-images.githubusercontent.com/64173714/219878971-f637e0f4-ffe4-400c-8826-6eb4010a4336.png">
 
 ```
 leafpad sky130_fd_sc_hd__tt_025C_1v80.lib
 leafpad  simple.sdc
 leafpad run.tcl
+```
+To run sta 
+
+```
 sta run.tcl -exit | tee run.log
 ```
 <img width="959" alt="d1 -1" src="https://user-images.githubusercontent.com/64173714/220656077-eae71440-bf07-4d97-83b0-51e1f7c9b7da.png">
-
 <img width="960" alt="d1 -2" src="https://user-images.githubusercontent.com/64173714/220656378-779c79f6-5b93-4041-9b42-611ff2ae26ef.png">
 <img width="960" alt="d1 -3" src="https://user-images.githubusercontent.com/64173714/220656751-6c88455f-6563-418c-a2d8-675c8ba7c67d.png">
+
+<a name="lab-2"></a>
+# Lab - 2
+
+Liberity File
+The.lib file is an ASCII representation of the timing and power parameters associated with any cell in a specific semiconductor technology.
+* The .lib file contains timing models and data to calculate
+* I/O delay paths
+* Timing check values
+* Interconnect delays
+
+Lab
+```
+cd lab2
+leafpad simple_min.lib
+leafpad simple_max.lib
+```
+<img width="960" alt="d2 -1" src="https://user-images.githubusercontent.com/64173714/220660262-d75b2352-7286-4b72-a58a-7f0e881769ee.png">
+
+```
+
 
 
 read_verilog simple.v
 set_input_delay 0 -min -rise [get_ports inp1] -clock tau2015_clk
 
-```
+## Refernces
+1. 
+2. https://people.eecs.berkeley.edu/~alanmi/publications/other/liberty07_03.pdf
