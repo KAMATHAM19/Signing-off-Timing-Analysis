@@ -255,9 +255,23 @@ leafpad simple_max.lib
 <img width="960" alt="d2 -1" src="https://user-images.githubusercontent.com/64173714/220660262-d75b2352-7286-4b72-a58a-7f0e881769ee.png">
 
 ```
+To find all of the cells in simple max.lib
+```
+# total no of cells
+grep -c " End cell" simple_max.lib 
+# cells
+grep -c " End cell" simple_max.lib
+```
+```
 
+<img width="960" alt="d2 - 2" src="https://user-images.githubusercontent.com/64173714/220673290-1e7c644a-a351-453f-8197-125f67c0d0b9.png">
 
+The pins of the cell NAND2_X1 in simple_max.lib
 
+<img width="635" alt="final nad" src="https://user-images.githubusercontent.com/64173714/220676727-229895fe-355b-43a1-ad67-20ed19dc0e1e.png">
+
+The difference between NAND2_X1 and NAND3_X1
+```
 read_verilog simple.v
 set_input_delay 0 -min -rise [get_ports inp1] -clock tau2015_clk
 
