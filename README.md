@@ -14,7 +14,7 @@ Sign-off timing analysis is a vital step in the electronic design automation pro
    * [Clocks](#clocks) 
    * [Port delays](#port-delays)
    * [Boundary Constraints](#boundary-constraints)    
- * [Lab - 1](#lab-1)
+   * [Lab - 1](#lab-1)
 
 <a name="day-1"></a>
 # DAY - 1 
@@ -193,7 +193,7 @@ set_drive - specifies resistance value
 set-driving_cell - specifies cell driving port
 set_input_transition - specifiestransition value
 ```
-<a name="lab-1"><a/a>
+<a name="lab-1"></a>
 # Lab - 1
 
 <a name="day-1"></a>
