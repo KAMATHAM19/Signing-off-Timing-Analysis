@@ -27,15 +27,18 @@ Sign-off timing analysis is a vital step in the electronic design automation pro
        * [Lab](#lab)
        * [SPEF](#spef)
 * [DAY - 3](#day-3)
+    * [Multiple Clocks](#multiple-clocks)
+    * [Timing arcs and Timing Sense](#timing-arcs-and-timing-sense)
+    * [Cell delays and Models](#cell-delays-and-models)
     * [Lab - 3](#lab-3)
-       * [Liberity File](#liberity-file)
-       * [Lab](#lab)
-       * [SPEF](#spef)
+       * [Exercise](#exercise)
  * [DAY - 4](#day-4)
+    * [Crosstalk and Noise](#crosstalk-and-noise)
+    * [Clock gating checks](#clock-gating-checks)
+    * [Async pins checks](#async-pins-checks)
     * [Lab - 4](#lab-4)
-       * [Liberity File](#liberity-file)
-       * [Lab](#lab)
-       * [SPEF](#spef)
+       * [Clock gating checks](#clock-gating-checks)
+       * [Async pin checks](#async-pin-checks)
   * [DAY - 5](#day-5)
     * [Lab - 5](#lab-5)
        * [Liberity File](#liberity-file)
@@ -385,16 +388,28 @@ understanding timing report
 <a name="day-3"></a>
 # DAY - 3
 
+<a name="multiple-clocks"></a>
+## Multiple Clocks
+
+<a name="timing-arcs-and-timing-sense"></a>
+## Timing arcs and Timing Sense
+
+<a name="cell-delays-and-models"></a>
+## Cell delays and Models
+    
+       
+
 <a name="lab-3"></a>
 # Lab - 3
 
+<a name="exercise"></a>
+## Exercise
 ```
 cd lab3
 ls
 sta run.tcl | tee out.txt
 ```
 <img width="923" alt="d3 2" src="https://user-images.githubusercontent.com/64173714/220686704-8ed65d6a-f82b-4f25-bbe4-663affc82235.png">
-
 
 <img width="539" alt="d3 3" src="https://user-images.githubusercontent.com/64173714/220686834-4cb29e4b-7d2f-49c3-b4b3-f6759fe23280.png">
 
@@ -403,7 +418,23 @@ report_checks –from F1/CK -endpoint_count 100
 <a name="day-4"></a>
 # DAY - 4
 
-lab 4
+<a name="crosstalk-and-noise"></a>
+## Crosstalk and Noise
+
+<a name="clock-gating-checks"></a>
+## Clock gating checks
+
+<a name="async-pins-checks"></a>
+## Async pins checks
+
+<a name="lab-4"></a>
+## Lab - 4
+
+<a name="clock-gating-checks"></a>
+## Clock gating checks
+
+<a name="async-pin-checks"></a>
+## Async pin checks
 
 <img width="960" alt="d4 1" src="https://user-images.githubusercontent.com/64173714/220689445-a0e80c70-afa5-4500-a239-d09e55db6f1e.png">
 
