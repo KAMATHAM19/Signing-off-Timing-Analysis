@@ -368,9 +368,9 @@ The difference between NAND2_X1 and NAND3_X1
 # SPEF
 
 A SPEF (Standard Parasitic Exchange Format) file describes the design's parasitic information.
-• Users would never manually create this file.
-• It is generated automatically by the tool.
-• It is primarily used to transfer parasitic data from one tool to another.
+ * Users would never manually create this file.
+ * It is generated automatically by the tool.
+ * It is primarily used to transfer parasitic data from one tool to another.
 
 <img width="960" alt="spef" src="https://user-images.githubusercontent.com/64173714/220685189-9ca39ed9-e30e-43cd-bdc5-c8d41a74be63.png">
 
