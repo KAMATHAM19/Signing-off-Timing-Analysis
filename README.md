@@ -18,6 +18,10 @@ Sign-off timing analysis is a vital step in the electronic design automation pro
       * [OpenSTA](#opensta)
       * [lab](#lab)
 * [DAY - 2](#day-2)
+    * [Timing Checks](#timing-checks)
+    * [Design Rule Checks](#design-rule-checks)
+    * [Latch Timing](#latch-timing)
+    * [STA Text Report](#sta-text-report)
     * [Lab - 2](#lab-2)
        * [Liberity File](#liberity-file)
        * [Lab](#lab)
@@ -261,6 +265,57 @@ sta run.tcl -exit | tee run.log
 # DAY - 2 
 
 
+<a name="timing-checks"></a>
+## Timing Checks
+
+![d2 1](https://user-images.githubusercontent.com/64173714/220770997-f967f1e6-ea53-424f-b9fd-c4622d3e379e.jpg)
+
+STA will perform additional checks in addition to the setup and hold checks.
+1. Clock gating check
+2. Asynchronous pin checks
+3. Data to data checks
+
+<a name="design-rule-checks"></a>
+## Design Rule Checks
+1. Slew/Transition analysis 
+    * Rise Slew - Time taken by a signal when it rises from 70% to 30% of vdd
+    * Fall Slew - Time taken by a signal when it falls from 70% to 30% of vdd
+2. Load analysis
+
+   It is the process of evaluating a design's timing by analyzing  the effects of load capacitance on signal propagation.
+
+- minimum and maximum capacitance on ports and nets
+- fanout load on ports and output pins
+
+3. Clock skew analysis
+
+The Difference in delays of the clock at different points in the path.
+
+- skew +ve - Capture clock has more delay than launch
+- skew -ve - Launch clock has more delay than capture
+
+4. pulse width checks
+ 
+ Pulse width checks are used to ensure that a sequential element's output waveform meets a minimum or maximum width requirement.
+ 
+<a name="latch-timing"></a>
+## Latch Timing
+
+![d2 2](https://user-images.githubusercontent.com/64173714/220771107-e3dfba4e-b3f1-40e5-ac34-f63c3b63d972.jpg)
+
+ - The flop-based design data is launched and captured on the edges, and regardless of the delay, it must be stable for one clock period.
+ - It allows more flexibility in timing
+ 
+ ![d2 3](https://user-images.githubusercontent.com/64173714/220771149-982a06dd-3959-4a97-93e9-514827f4b098.jpg)
+
+Time borrowing is a technique for adjusting the timing of two distinct paths. It is possible to accomplish this by borrowing or lending some delay from/to a neighbouring path. A latch is placed in the path that has a timing violation. This latch acts as a buffer, delaying the signal and allowing the previous stage to complete its operation. The latch's output is then transferred to the next stage.
+
+<a name="sta-text-report"></a>
+## STA Text Report
+
+<img width="478" alt="sta report" src="https://user-images.githubusercontent.com/64173714/220771774-5260032a-c4e2-4ecb-8f64-965c08cf3f20.png">
+
+
 <a name="lab-2"></a>
 # Lab - 2
 
@@ -271,6 +326,11 @@ The.lib file is an ASCII representation of the timing and power parameters assoc
 * I/O delay paths
 * Timing check values
 * Interconnect delays
+
+<img width="878" alt="lib 1" src="https://user-images.githubusercontent.com/64173714/220772734-1a6ee922-ec08-410f-8e13-fa83c2ab3c5c.png">
+<img width="889" alt="lib 2" src="https://user-images.githubusercontent.com/64173714/220772764-1bc24755-55cd-4bb0-ae56-a7fb3d791cd7.png">
+<img width="878" alt="lib 3" src="https://user-images.githubusercontent.com/64173714/220772783-0801064a-16c6-4119-b3d1-d332efb68716.png">
+
 
 Lab
 ```
