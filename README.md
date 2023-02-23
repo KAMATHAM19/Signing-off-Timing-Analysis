@@ -46,6 +46,8 @@ Sign-off timing analysis is a vital step in the electronic design automation pro
     * [Lab - 5](#lab-5)
        * [CPPR](#cppr)
        * [ECO](#eco)
+  * [Refernces](#refernces)
+  * [Acknowledgement](#refernces)
        
        
 
@@ -488,9 +490,11 @@ paths
 <a name="cppr"></a>
 ## CPPR
 <img width="827" alt="day 5" src="https://user-images.githubusercontent.com/64173714/220872644-b718af94-c6b3-44a9-aa2a-084599ae0a6e.png">
+
 ```
 cd lab4
 leafpad run.tcl
+
 ```
 <img width="956" alt="day 5 2" src="https://user-images.githubusercontent.com/64173714/220874622-9d902ad8-4dae-4367-bf6e-879661c0fd6d.png">
 <img width="960" alt="day 5 1" src="https://user-images.githubusercontent.com/64173714/220873899-d46ed050-c519-4d3d-bf02-fa0cd3a5417d.png">
@@ -542,5 +546,8 @@ Difference between s27_eco.v and s27.v
 4. https://www.vlsisystemdesign.com/?s=cppr
 5. https://www.vlsisystemdesign.com/the-beauty-of-slack-based-timing-eco/
 
-<a name="day-5"></a>
+<a name="acknowledgement"></a>
+## Acknowledgement
+1. [Kunal Gosh](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/)
+2. [Vikas Sachdeva](https://www.linkedin.com/in/vikas-sachdeva-0849577/)
 
