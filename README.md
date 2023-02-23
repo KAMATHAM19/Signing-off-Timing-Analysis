@@ -418,6 +418,23 @@ sta run.tcl | tee out.txt
 
 report_checks –from F1/CK -endpoint_count 100
 
+<img width="960" alt="8" src="https://user-images.githubusercontent.com/64173714/220889593-bde7b1f3-b7be-4491-8ffb-30e8a06226f0.png">
+
+paths
+
+<img width="960" alt="path 1" src="https://user-images.githubusercontent.com/64173714/220889647-8fb5168a-01f6-4151-967f-da87a711f4ce.png">
+<img width="963" alt="path 2" src="https://user-images.githubusercontent.com/64173714/220889663-2c3f5d24-9cfc-4c06-acc6-06de808fceac.png">
+
+<img width="972" alt="path 3" src="https://user-images.githubusercontent.com/64173714/220889677-5320f8a1-89d8-4ad5-a78d-87782e07cb59.png">
+<img width="960" alt="path 4" src="https://user-images.githubusercontent.com/64173714/220889689-0c49b8d3-ea2f-4524-88fe-4ed58416eeae.png">
+
+<img width="960" alt="path 5" src="https://user-images.githubusercontent.com/64173714/220889706-2a8af071-36a8-4828-bb80-8eecaf35eb67.png">
+<img width="961" alt="path 6" src="https://user-images.githubusercontent.com/64173714/220889719-2553f9e6-bb85-4ccf-b77f-88c92db6beb6.png">
+
+<img width="967" alt="path 7" src="https://user-images.githubusercontent.com/64173714/220889736-103bd2d9-aa9e-47fd-89ec-4133ce506f97.png">
+
+<img width="962" alt="path 8" src="https://user-images.githubusercontent.com/64173714/220889797-61ece514-984a-4ad9-9ade-b5b4e402f03a.png">
+
 <a name="day-4"></a>
 # DAY - 4
 
