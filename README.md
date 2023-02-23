@@ -468,12 +468,54 @@ report_checks –from F1/CK -endpoint_count 100
 
 <a name="lab-5"></a>
 ## Lab - 5
-
 <a name="cppr"></a>
 ## CPPR
- 
-<a name="eco"></a>
+<img width="827" alt="day 5" src="https://user-images.githubusercontent.com/64173714/220872644-b718af94-c6b3-44a9-aa2a-084599ae0a6e.png">
+```
+cd lab4
+leafpad run.tcl
+```
+<img width="956" alt="day 5 2" src="https://user-images.githubusercontent.com/64173714/220874622-9d902ad8-4dae-4367-bf6e-879661c0fd6d.png">
+<img width="960" alt="day 5 1" src="https://user-images.githubusercontent.com/64173714/220873899-d46ed050-c519-4d3d-bf02-fa0cd3a5417d.png">
+
+```
+ sta run.tcl | tee out.txt
+```
+<img width="960" alt="d5 1" src="https://user-images.githubusercontent.com/64173714/220874109-e8902969-fbd1-4d63-82b6-a0e55221e6c7.png">
+<img width="960" alt="d5 2" src="https://user-images.githubusercontent.com/64173714/220874125-965fd598-9df9-4916-a901-674a19b2743d.png">
+
+with enable
+<a name="eco"></a><img width="960" alt="d6 1" src="https://user-images.githubusercontent.com/64173714/220875922-8daf884c-f4b3-4e09-9fb1-377a825f47c7.png">
+
+<img width="960" alt="d6 2" src="https://user-images.githubusercontent.com/64173714/220875986-6e98f6df-a71e-4f1d-8fc9-0c8e3037d2e0.png">
+
 ## ECO
+ECO – Engineering Change Order
+
+* During the ECO cycle, we perform various analyses one by one for each check that needs to be closed but cannot be closed until the PnR stage.
+
+* There are specialised signoff tools that assist us in analysing the issue and recommending the changes that must be made in order to close the issue.
+
+* The suggested change is captured in an eco file.
+```
+cd lab5
+leafpad run.tcl
+```
+<img width="960" alt="d6 4" src="https://user-images.githubusercontent.com/64173714/220877356-c6462cd5-b9e8-4ce0-933d-829a2f10a15a.png">
+<img width="960" alt="d6 3" src="https://user-images.githubusercontent.com/64173714/220877121-80a9984d-9205-4164-a4c4-334d4ae7af16.png">
+
+```
+sta run.tcl | tee run.log
+```
+
+<img width="960" alt="eco 1" src="https://user-images.githubusercontent.com/64173714/220880095-1484259f-ea75-412b-942e-870abf58bbd7.png">
+<img width="957" alt="eco 2" src="https://user-images.githubusercontent.com/64173714/220880111-3667315e-158f-48f2-9345-1255d2222f5a.png">
+<img width="960" alt="ec0 3" src="https://user-images.githubusercontent.com/64173714/220880125-77f1acb9-8771-4ec9-b28a-1deb5c1be53b.png">
+<img width="960" alt="eco4" src="https://user-images.githubusercontent.com/64173714/220880144-e7f145f8-4e3d-41f2-a7af-aedb6e3addb5.png">
+
+Difference between s27_eco.v and s27.v
+<img width="960" alt="7 1" src="https://user-images.githubusercontent.com/64173714/220883196-4cb1640d-801f-4cf8-82ec-cd7cd2fa67f7.png">
+<img width="952" alt="7 2" src="https://user-images.githubusercontent.com/64173714/220883211-1844364a-0818-40c5-a7fb-68bc47c28de1.png">
 
 <a name="refernces"></a>
 ## Refernces
