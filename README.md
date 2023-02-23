@@ -605,12 +605,21 @@ Crosstalk - The coupling capacitors can lead to delays in the signal propagation
  5. `set_disable_timing` - disable certain timing (used for arcs)
  
  * Multiple modes
+ 
  `set_case_analysis` - specifies a certain portion of design and a constant value
 
 <a name="lab-5"></a>
 ## Lab - 5
 <a name="cppr"></a>
 ## CPPR
+
+CPPR (Clock Path Power Reduction) 
+
+  * It is a technique used to reduce the power consumed by the clock network in a chip design. 
+  * The CPPR technique involves optimizing the clock tree to reduce the overall clock skew and jitter, while also minimizing the power consumed by the clock buffers and other clock distribution elements. 
+  * This is achieved by carefully selecting the location and size of clock buffers, as well as using other techniques such as clock gating and frequency scaling. 
+  * The goal of CPPR is to reduce the overall power consumption of a chip design while maintaining acceptable timing and performance characteristics.
+ 
 <img width="827" alt="day 5" src="https://user-images.githubusercontent.com/64173714/220872644-b718af94-c6b3-44a9-aa2a-084599ae0a6e.png">
 
 ```
