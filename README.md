@@ -522,12 +522,27 @@ paths
 <a name="crosstalk-and-noise"></a>
 ## Crosstalk and Noise
 
+Crosstalk - The coupling capacitors can lead to delays in the signal propagation time and can affect the timing of the signals in the neighboring lines, leading to potential signal integrity issues.
+ 
+1. Crosstalk - Impacting Delays
+  * Noise can caused by coupling of switching activity of he victim with switching activity of the agressor.
+2. Crosstalk - glitches
+ * A steady signal net can have a glitch due to charge transferred by the switching.
+
 <a name="clock-gating-checks"></a>
 ## Clock gating checks
-
+* A signal can control the path of the clock at a cell
+* The signal must be used as clock downstream
+    * feed a flop or latch clock pin
+    * feed output port
+    * feed generated clock
+ * Active high clock gating checks - occurs on `AND` and `NAND` cells
+ * Active low clock gating checks - occurs on `OR` and `NOR` cells
+ 
 <a name="async-pins-checks"></a>
 ## Async pins checks
-
+* Assertion is asynchronous event or no reation with clock
+* De-assertion causes flop to become dependent on clock (Due to the unknown state, timing checks must be performed)
 <a name="lab-4"></a>
 ## Lab - 4
 
@@ -558,11 +573,39 @@ paths
 <a name="clock-groups"></a>
 ## Clock groups
 
+* Clock groups indicate whether or not a clock is synchronised and these clock groups are
+ 1. synchronous clocks - events happen at a fixed phase relation
+ 2. Asynchronous clocks - no fixed phase relation
+ 3. logically exclusive clocks -  do not have any common active edge
+ 4. physically exclusive clocks - clock domains where there is no possibility of a common signal or path between them. These domains have independent clock sources and are completely isolated from each other to prevent any clock skew or crosstalk issues.
+ 
 <a name="clock-properties"></a>
 ## Clock properties
-
+``` 
+ set_clock_transition - changing 1/0 or 0/1
+ set_clock_uncertainity - for clock skew and jitter
+ set_clock_latency - source and network latency
+ set_clock_sense - stopping the clock or specifying sense
+    set_clock_sense -stop_propagation
+    set_clock_sense -positive
+ set_ideal_network
+ 
+```
 <a name="timing-exceptions"></a>
 ## Timing Exceptions
+* Path Specification 
+    * from - startpoint (ports/clock pins)
+    * to - endpoint
+    * through - nets/nodes
+ 
+ 1. `set_false_path` - Don't time the path
+ 2. `set_multicycle_path` - use to chnage the default behaviour
+ 3. `set_max_delay` - maximum delay on path
+ 4. `set_min_delay` - minimum delay on path
+ 5. `set_disable_timing` - disable certain timing (used for arcs)
+ 
+ * Multiple modes
+ `set_case_analysis` - specifies a certain portion of design and a constant value
 
 <a name="lab-5"></a>
 ## Lab - 5
