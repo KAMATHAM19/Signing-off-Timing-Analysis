@@ -396,8 +396,15 @@ understanding timing report
 <a name="multiple-clocks"></a>
 ## Multiple Clocks
 
+* If there are multiple clocks with different frequencies, a setup check is performed by expanding the clock to a common base period and identifying the most restrictive setup.
+* There are two rules for the hold check
+    * The data launched by the current setup launch edge cannot be captured by the previous capture edge.
+    * The Data launched by the following launch edge must not be captured by the current setup capture edge.
+
 <a name="timing-arcs-and-timing-sense"></a>
 ## Timing arcs and Timing Sense
+
+
 
 <a name="cell-delays-and-models"></a>
 ## Cell delays and Models
