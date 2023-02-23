@@ -404,13 +404,85 @@ understanding timing report
 <a name="timing-arcs-and-timing-sense"></a>
 ## Timing arcs and Timing Sense
 
+![1](https://user-images.githubusercontent.com/64173714/220907208-79845745-f487-4783-8740-1b85224eba61.jpg)
 
+1. Timing arcs 
 
+ * Timing arcs are classified into two types:
+    * cell arcs - input to output connected cells 
+    * net arcs - connection one cell to another
+ 
+ 2. Combinational arcs
+  * It is a logical path or a signal path that involves only combinational logic elements.
+  
+ 3. Sequential arcs 
+  * The signal paths that involve flip-flops or registers in a sequential circuit and related to clock.
+
+4. Timing sense
+  * Positive unate arc - the output follows the input in the same direction.
+  * Negative unate arc - the output follows the input in the opposite direction. 
+  * Non-unate arc - if the input or output does not match, we are unable to predict.
+ 
 <a name="cell-delays-and-models"></a>
 ## Cell delays and Models
-    
+1. Cell delays
+ * Cell delays are determined by input transition/slew, and output load/capacitance
+ 
+2. Clock latency
+ * It includes both clock source and network latency.
+ 
+3. Clock jitter
+ * There will be more uncertainty in clock edges in practise.
        
+For Setup and Hold Calculations
 
+![2](https://user-images.githubusercontent.com/64173714/220907307-4a27ae8c-44a7-4f84-97aa-85d2ff456b19.jpg)
+
+
+1. Setup Check
+ ```
+    Tc2q + Tcomb + Tsetup <= Tperiod
+    
+ ```
+Setup check with clock skew
+```
+  
+    Tc2q + Tcomb + Tsetup <= Tperiod + Tskew
+    
+ ```
+ * If Tskew is +ve - addition margin
+ * If Tskew is -ve - pessimistic
+    
+ Setup check with clock skew and jitter
+ ```
+    Tc2q + Tcomb + Tsetup <= Tperiod + Tskew . Su
+ 
+ ```
+2. Hold Check
+```
+   Tc2q + Tcomb >= Thold
+
+```  
+Hold check with clock skew
+```
+   Tc2q + Tcomb >= Thold + Tskew
+
+```
+* if Tskew is +ve - hold pessimistive
+* if Tskew is -ve - relax
+
+Hold check with clock skew and jitter
+```
+    Tc2q + Tcomb >= Thold + Tskew + Hu
+```
+* Different delay values on paths 
+  * for setup pessimistic - launch path (max delay) & capture path (min delay)
+  * for hold pessimistic - launch path (min delay) & capture path (max delay)
+  * for Undue pessimism - 
+    * The situation where the timing analysis tool reports timing violations that do not actually exist in the design.
+    * This can occur due to various reasons such as inaccurate modeling of the design, incorrect setup of the timing constraints, or over-conservative timing margins.
+    * The CPPR technique is used to reduce clock path pessimism where there is too much pessimism.
+  
 <a name="lab-3"></a>
 # Lab - 3
 
